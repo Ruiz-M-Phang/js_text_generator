@@ -1,0 +1,14 @@
+   @font-face {
+     font-family: "pixel";
+     src: url("./pixel_3/pixel.ttf");
+   }
+
+.BG {
+    background-color: black;
+}
+
+.text__style {
+    color: lawngreen;
+    font-family: "pixel";
+    text-align: center;
+}
