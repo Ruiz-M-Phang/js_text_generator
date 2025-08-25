@@ -1,4 +1,27 @@
-   @font-face {
+/* Reset css */
+
+*, *::before, *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+    
+    html, body {
+     min-height: 100vh;
+    }
+    html {
+     font-size: 62.5%; /* font is 10px */
+     scroll-behavior: smooth;
+    }
+    
+    img{
+     max-width: 100%;
+     height: auto;
+    }
+
+/* style van webpagina */
+
+@font-face {
      font-family: "pixel";
      src: url("../pixel_3/pixel.ttf");
    }
@@ -11,4 +34,17 @@
     color: lawngreen;
     font-family: "pixel";
     text-align: center;
+    padding: 5rem 5rem 5rem 5rem;
+}
+
+.button__style {
+  cursor: pointer;
+  display: flex;
+  background-color: lawngreen;
+  font-size: 1.5rem;
+  font-family: "pixel";
+  justify-self: center;
+  border-radius: 2rem;
+  margin: 2.5rem 2.5rem 2.5rem 2.5rem;
+  padding: 1.5rem 5rem 1.5rem 5rem;
 }
