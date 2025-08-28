@@ -1,10 +1,25 @@
-// let txt_generator = ["H", "HE", "HEL", "HELL", "HELLO", "HELLO ", "HELLO W",
-//      "HELLO WO", "HELLO WOR", "HELLO WORL", "HELLO WORLD", "HELLO WORLD!"];
+// Level 2 (completed)
 
-// txt_generator.toString()
+let clear_text = "";
+let greeting = " HELLO WORLD!";
+let i = 0;
+let speed = 80;
 
-let text = "HELLO WORLD!";
+function greeting_message() {
+    if (i <= clear_text.length) {
+        document.getElementById("text__script").innerHTML = clear_text.charAt(i);
+        i++;
+        setTimeout(greeting_message, speed);
+    }
 
-function greeting() {
-    document.getElementById("text__script").innerHTML = text;
+    if (i < greeting.length) {
+        document.getElementById("text__script").innerHTML += greeting.charAt(i);
+        i++;
+        setTimeout(greeting_message, speed);
+    }
 }
+
+function refresh() {
+    location.reload();
+}
+
